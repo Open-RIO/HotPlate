@@ -9,7 +9,7 @@ FileUtils.mkdir_p "#{install_location}/bin"
 
 puts "Installing HotPlate to #{install_location}..."
 
-FileUtils.cp File.expand_path("../CLI.exe", __FILE__), install_location
+FileUtils.cp File.expand_path("../out/CLI.exe", __FILE__), install_location
 FileUtils.cp File.expand_path("../toast.bat", __FILE__), "#{install_location}/bin"
 
 puts "Adding CLI shortcut..."
