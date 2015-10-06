@@ -17,4 +17,7 @@ HotPlate is used from the Command Line. The following commands are valid:
 - ``` toast build ```
   - To be run inside a Module folder. Will build the module and dump it in ``` build/ ``` for JavaScript and ``` build/libs/ ``` for Java.
 
-  ![](img/build.png)
+  ![](img/build.png)  
+
+- ``` toast idea ``` and ``` toast eclipse ```
+  - To be run inside a Java Module Folder. This will create the development environment for either the IntelliJ IDEA IDE or the Eclipse IDE

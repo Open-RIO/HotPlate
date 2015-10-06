@@ -5,6 +5,7 @@ def java
   team = gets.chop!.to_i.to_s     # Ensures it's a proper number :)
   clazz = "#{@path}/src/main/java/frc/team#{team}/#{@name}/RobotModule.java"
   jin = File.expand_path "../../java", __FILE__
+  #puts Dir[jin]
   FileUtils.cp_r "#{jin}/.", @path
 
   build = File.read File.join(@path, "build.gradle")
