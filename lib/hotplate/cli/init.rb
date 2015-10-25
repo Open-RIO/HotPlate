@@ -3,7 +3,7 @@ require 'FileUtils'
 def java
   puts "What is your Team Number? (0000)"
   team = gets.chop!.to_i.to_s     # Ensures it's a proper number :)
-  clazz = "#{@path}/src/main/java/frc/team#{team}/#{@name}/RobotModule.java"
+  clazz = "#{@path}/src/main/java/frc/team#{team}/#{@name.downcase}/RobotModule.java"
   jin = File.expand_path "../../java", __FILE__
   #puts Dir[jin]
   FileUtils.cp_r "#{jin}/.", @path
@@ -23,8 +23,11 @@ def java
   File.delete templ
 
   begin
-    FileUtils.chmod 0777, %w(build.gradle, gradlew)
-  rescue; end
+    FileUtils.chmod 0777, [File.join(@path, "gradlew"), File.join(@path, "build.gradle")]
+  rescue => e
+    puts "NOTE: Could not CHMOD gradle files"
+    puts e.backtrace
+  end
 end
 
 def javascript

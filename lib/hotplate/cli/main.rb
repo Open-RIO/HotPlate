@@ -27,7 +27,10 @@ def gemload name
 end
 
 gemload "rubyzip"
+require_relative '../version'
 
+puts "HotPlate CLI Version #{HotPlate::VERSION}"
+puts
 puts "Error: No option selected!" unless ARGV.length > 0
 first_arg = ARGV.shift
 
