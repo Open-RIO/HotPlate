@@ -4,7 +4,8 @@ Toast module building made easy.
 ## Installation
 - Windows
   - Go to [releases](https://github.com/Open-RIO/HotPlate/releases) and download the latest release
-  - Double click the ``` ToastInstaller.exe ``` file. (*You may need to start with admin permissions*)
+  - Double click the ``` ToastInstaller.exe ``` file. (*You may need to start with admin permissions*)  
+  *NOTE windows users may choose to download the Ruby Gem instead if they already have Ruby on their system.*
 - Mac / Linux
   - Run ``` gem install hotplate ```. (*Sudo may be required*)
 
