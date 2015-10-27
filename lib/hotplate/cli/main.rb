@@ -21,13 +21,9 @@ def os
   end
 end
 
-def gemload name
-    libroot = File.expand_path "../../gems", __FILE__
-    $:.unshift Dir[libroot + "/#{name}-*/lib"][0]
-end
-
-gemload "rubyzip"
-require_relative '../version'
+require 'fileutils'
+require "zip"
+require "hotplate/version"
 
 puts "HotPlate CLI Version #{HotPlate::VERSION}"
 puts

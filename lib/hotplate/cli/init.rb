@@ -1,5 +1,3 @@
-require 'FileUtils'
-
 def java
   puts "What is your Team Number? (0000)"
   team = gets.chop!.to_i.to_s     # Ensures it's a proper number :)

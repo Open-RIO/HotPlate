@@ -2,12 +2,17 @@
 Toast module building made easy.
 
 ## Installation
+
+### Install Ruby
 - Windows
-  - Go to [releases](https://github.com/Open-RIO/HotPlate/releases) and download the latest release
-  - Double click the ``` ToastInstaller.exe ``` file. (*You may need to start with admin permissions*)  
-  *NOTE windows users may choose to download the Ruby Gem instead if they already have Ruby on their system.*
-- Mac / Linux
-  - Run ``` gem install hotplate ```. (*Sudo may be required*)
+  - Install Ruby using the [Ruby Installer](http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.3.exe). (Make sure to check the box that says "Add Ruby executables to your PATH")
+- Mac
+  - While mac comes with a Ruby version preinstalled, you may reinstall using the rbenv package from Homebrew
+- Linux
+  - It is recommended to use [RVM](http://rvm.io/) to install ruby, however you can also run ```sudo apt-get install ruby```.
+
+### Install Hotplate
+Running ```gem install hotplate``` in a command line terminal will install the HotPlate utility to your system.
 
 ## Usage
 HotPlate is used from the Command Line. The following commands are valid:  
