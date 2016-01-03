@@ -5,7 +5,7 @@ Toast module building made easy.
 
 ### Install Ruby
 - Windows
-  - Install Ruby using the [Ruby Installer](http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.3.exe). (Make sure to check the box that says "Add Ruby executables to your PATH")
+  - Install Ruby using the [Ruby Installer](http://rubyinstaller.org/). (Make sure to check the box that says "Add Ruby executables to your PATH")
 - Mac
   - While mac comes with a Ruby version preinstalled, you may reinstall using the rbenv package from Homebrew
 - Linux
